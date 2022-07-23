@@ -22,7 +22,7 @@ function App() {
                 <a className="nav-link" href="#questions">Questions</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#Instructors">Instructors</a>
+                <a className="nav-link" href="#instructors">Instructors</a>
               </li>
             </ul>
           </div>
@@ -37,7 +37,11 @@ function App() {
               <p className='lead my-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla provident placeat et, consequuntur ratione,
                 non repellendus magnam minus possimus sit nostrum officia atque eius minima?
                 Nesciunt cupiditate dolores earum expedita.</p>
-              <button className="btn btn-primary btn-lg">Hire Me</button>
+              {/* <button className="btn btn-primary btn-lg " data-bs-toggel="modal" data-bs-target="#exampleModal">Hire Me</button> */}
+              {/* <!-- Button trigger modal --> */}
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Start the Enrollment
+              </button>
             </div>
             <img className="img-fluid w-50 d-none d-sm-block" src={showcase} alt="" />
           </div>
@@ -194,9 +198,9 @@ function App() {
               <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores iste perspiciatis ea eveniet maiores totam delectus non, expedita dolores, magni nostrum laudantium. Nam ipsum obcaecati atque, quas exercitationem consequatur in blanditiis non unde, sit a amet eos debitis vel.</div>
             </div>
           </div>
-                  {/* item   */}
+          {/* item   */}
 
-                  <div class="accordion-item">
+          <div class="accordion-item">
             <h2 class="accordion-header" >
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" >
                 How do i sign up?
@@ -206,9 +210,9 @@ function App() {
               <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores iste perspiciatis ea eveniet maiores totam delectus non, expedita dolores, magni nostrum laudantium. Nam ipsum obcaecati atque, quas exercitationem consequatur in blanditiis non unde, sit a amet eos debitis vel.</div>
             </div>
           </div>
-                       {/* item   */}
+          {/* item   */}
 
-                       <div class="accordion-item">
+          <div class="accordion-item">
             <h2 class="accordion-header" >
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" >
                 Is internship included in the course?
@@ -220,24 +224,24 @@ function App() {
           </div>
         </div>
       </div>
-{/* instructor */}
+      {/* instructor */}
       <section className="p-5 bg-primary" id="instructors">
         <div className="container">
           <h2 className='text-center text-white'>Instructors</h2>
-          <p className="lead text-center text-white md-5">Our Instructors all have 6+ experince 
-          as  a web developers.</p>
+          <p className="lead text-center text-white md-5">Our Instructors all have 6+ experince
+            as  a web developers.</p>
           <div className="row g-5">
             <div className="col-md-6 col-lg-3">
               <div className="card bg-light">
                 <div className="card-body text-center">
-                  <img src="https://randomuser.me/api/portraits/women/63.jpg" className="rounded-circle mb-4"alt="" />
+                  <img src="https://randomuser.me/api/portraits/women/63.jpg" className="rounded-circle mb-4" alt="" />
                   <h3 className='card-title mb-4'>Kaite</h3>
-                   <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
-                   ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
+                  <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
+                    ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
 
 
                 </div>
@@ -247,14 +251,14 @@ function App() {
             <div className="col-md-6 col-lg-3">
               <div className="card bg-light">
                 <div className="card-body text-center">
-                  <img src="https://randomuser.me/api/portraits/women/8.jpg" className="rounded-circle mb-4"alt="" />
+                  <img src="https://randomuser.me/api/portraits/women/8.jpg" className="rounded-circle mb-4" alt="" />
                   <h3 className='card-title mb-4'>Maria</h3>
-                   <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
-                   ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
+                  <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
+                    ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
 
 
                 </div>
@@ -264,14 +268,14 @@ function App() {
             <div className="col-md-6 col-lg-3">
               <div className="card bg-light">
                 <div className="card-body text-center">
-                  <img src="https://randomuser.me/api/portraits/men/63.jpg" className="rounded-circle mb-4"alt="" />
+                  <img src="https://randomuser.me/api/portraits/men/63.jpg" className="rounded-circle mb-4" alt="" />
                   <h3 className='card-title mb-4'>Jhon Doe</h3>
-                   <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
-                   ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
+                  <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
+                    ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
 
 
                 </div>
@@ -281,14 +285,14 @@ function App() {
             <div className="col-md-6 col-lg-3">
               <div className="card bg-light">
                 <div className="card-body text-center">
-                  <img src="https://randomuser.me/api/portraits/men/44.jpg" className="rounded-circle mb-4"alt="" />
+                  <img src="https://randomuser.me/api/portraits/men/44.jpg" className="rounded-circle mb-4" alt="" />
                   <h3 className='card-title mb-4'>Mark Mil</h3>
-                   <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
-                   ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
-                   <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
+                  <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi.
+                    ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href='hash'><i className="bi bi-twitter text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-facebook text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-linkedin text-dark mx-1"></i></a>
+                  <a href='hash'><i className="bi bi-instagram text-dark mx-1"></i></a>
 
 
                 </div>
@@ -297,7 +301,75 @@ function App() {
           </div>
         </div>
       </section>
+      {/* contacts  and map*/}
 
+      <section className="p-5">
+        <div className="container">
+          <div className="row g-4">
+            <div className="col-md">
+              <h2 className='text-center mb-4'>Contact Info</h2>
+              <ul className="list-group list-group-flush lead">
+                <li className="list-group-item">
+                  <span className="fw-bold">
+                    Mail Location: </span>
+                  Model Colony Malir
+                </li>
+                <li className="list-group-item">
+                  <span className="fw-bold">
+                    Enrollment Office: </span>
+                  +49 98747044
+                </li>
+                <li className="list-group-item">
+                  <span className="fw-bold">
+                    Contact Number: </span>
+                  +49 44490886
+                </li>
+                <li className="list-group-item">
+                  <span className="fw-bold">
+                    Student Email: </span>
+                  students@yahoo.com
+                </li>
+              </ul>
+            </div>
+            <div className="col-md">
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- Modal --> */}
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p className="lead">Fill out this form and we will get back to you</p>
+               <form>
+                <div className="mb-4">
+                  <label htmlFor="first-name" className="col-form-label">First Name</label>
+                  <input type="text" className="form-control" id="first-name" />
+
+                  <label htmlFor="last-name" className="col-form-label">Last Name</label>
+                  <input type="text" className="form-control" id="last-name" />
+                  <label htmlFor="phone" className="col-form-label">Phone Number</label>
+                  <input type="text" className="form-control" id="phone" />
+                  <label htmlFor="email" className="col-form-label">Email Address</label>
+                  <input type="text" className="form-control" id="email" />
+                </div>
+               </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   );
