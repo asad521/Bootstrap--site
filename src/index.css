@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* @media(min-width: 768px) {
+  .news-input{
+    width:40%;
+  }
+} */
+
+body::before {
+  display: block;
+  content: '';
+  height:80px;
+}
